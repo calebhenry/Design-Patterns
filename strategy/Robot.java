@@ -7,8 +7,7 @@ public abstract class Robot {
     protected ArrayList<String> character = new ArrayList<String>();
     protected MoveBehavior moveBehavior;
 
-    public Robot(String name)
-    {
+    public Robot(String name) {
         this.name = name;
     }
 
@@ -16,17 +15,14 @@ public abstract class Robot {
         this.moveBehavior = moveBehavior;
     }
 
-    public void move()
-    {
+    public void move() {
         moveBehavior.move(character);
     }
 
     public abstract String toString();
 
-    public String getName()
-    {
+    public String getName() {
         return this.name;
     }
-
 
 }

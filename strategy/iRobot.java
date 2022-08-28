@@ -1,9 +1,8 @@
 package strategy;
 
 public class iRobot extends Robot {
-    
-    public iRobot(String name)
-    {
+
+    public iRobot(String name) {
         super(name);
         character.add("( )");
         character.add(">|<");
@@ -11,8 +10,7 @@ public class iRobot extends Robot {
         moveBehavior = new RunBehavior();
     }
 
-    public String toString()
-    {
+    public String toString() {
         return (name + " is an iRobot");
     }
 }

@@ -1,8 +1,7 @@
 package strategy;
 
 public class HumanRobot extends Robot {
-    public HumanRobot(String name)
-    {
+    public HumanRobot(String name) {
         super(name);
         character.add(" 0");
         character.add("-|-");
@@ -10,8 +9,7 @@ public class HumanRobot extends Robot {
         moveBehavior = new WalkBehavior();
     }
 
-    public String toString()
-    {
+    public String toString() {
         return (name + " is  a human robot");
     }
 }

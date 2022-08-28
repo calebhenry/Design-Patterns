@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public abstract class MoveBehavior {
-    private static final int DEFAULT_SPEED = 200;
+    private static final int DEFAULT_SPEED = 300;
     private static final int NUM_MOVES = 30;
 
     /**
@@ -23,9 +23,9 @@ public abstract class MoveBehavior {
      *                  is fast
      */
     public void move(ArrayList<String> character, int speed) {
-        for(int i = 0; i < NUM_MOVES; i++) {
+        for (int i = 0; i < NUM_MOVES; i++) {
             displayCharacter(character);
-            sleep(300/speed);
+            sleep(DEFAULT_SPEED / speed);
             pushCharacterForward(character);
             clear();
         }
