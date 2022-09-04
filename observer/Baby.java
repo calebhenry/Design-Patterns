@@ -3,15 +3,17 @@ import java.util.Random;
 
 /**
  * A baby that is a subject meant to be observed by a list of observers
+ * 
  * @author Caleb Henry
  */
 public class Baby implements Subject {
     private String name;
     private ArrayList<Observer> observers;
     private Random rand = new Random();
-
+S
     /**
      * Creates a baby, sets its name, and adds a list of observers
+     * 
      * @param name The name of the baby
      */
     public Baby(String name) {
@@ -21,6 +23,7 @@ public class Baby implements Subject {
 
     /**
      * Fetches the name of the baby
+     * 
      * @return Returns a String that represents the name of the baby
      */
     public String getName() {
@@ -32,10 +35,9 @@ public class Baby implements Subject {
      */
     public void receiveLove() {
         int random = rand.nextInt(1, 3);
-        if(random == 1) {
+        if (random == 1) {
             System.out.println(this.name + " feels appreciated and loved.");
-        }
-        else if(random == 2) {
+        } else if (random == 2) {
             System.out.println(this.name + " pushes everyone away and continues to cry.");
         }
     }
@@ -45,10 +47,9 @@ public class Baby implements Subject {
      */
     public void eat() {
         int random = rand.nextInt(1, 3);
-        if(random == 1) {
+        if (random == 1) {
             System.out.println(this.name + " has a happy full tummy.");
-        }
-        else if(random == 2) {
+        } else if (random == 2) {
             System.out.println(this.name + " throws all his food on the floor.");
         }
     }
@@ -62,14 +63,16 @@ public class Baby implements Subject {
 
     /**
      * Adds the observer to the baby's array list of observers
+     * 
      * @param observer The observer that is added to the list
      */
-    public void registerObserver(Observer observer){
+    public void registerObserver(Observer observer) {
         observers.add(observer);
     }
 
     /**
      * Removes the observer from the baby's array list of observers
+     * 
      * @param observer The observer that is removed from the list
      */
     public void removeObserver(Observer observer) {
@@ -77,11 +80,13 @@ public class Baby implements Subject {
     }
 
     /**
-     * Iterates through the list of observers and updates them with the baby's current cry
+     * Iterates through the list of observers and updates them with the baby's
+     * current cry
+     * 
      * @param cry The cry that the observers are given
      */
     public void notifyObservers(Cry cry) {
-        for(Observer observer : observers) {
+        for (Observer observer : observers) {
             observer.update(cry);
         }
     }
