@@ -1,5 +1,6 @@
 /**
  * The subject that the observers get information from
+ * @author Caleb Henry
  */
 public interface Subject {
 

@@ -3,6 +3,7 @@ import java.util.Random;
 
 /**
  * A baby that is a subject meant to be observed by a list of observers
+ * @author Caleb Henry
  */
 public class Baby implements Subject {
     private String name;

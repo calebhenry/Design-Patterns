@@ -1,9 +1,10 @@
 /**
  * A mom who can be assigned a baby as a subject
+ * @author Caleb Henry
  */
 public class Mom implements Observer {
     
-    Subject baby;
+    private Subject baby;
 
     /**
      * Creates a new mom and assigns her to the designated baby

@@ -2,6 +2,7 @@ import java.util.Random;
 
 /**
  * A dad who can be assigned a baby as a subject
+ * @author Caleb Henry
  */
 public class Dad implements Observer {
     

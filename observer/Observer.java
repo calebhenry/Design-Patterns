@@ -1,5 +1,6 @@
 /**
  * Observes a designated subject
+ * @author Caleb Henry
  */
 public interface Observer {
 
