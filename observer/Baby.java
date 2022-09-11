@@ -10,10 +10,10 @@ public class Baby implements Subject {
     private String name;
     private ArrayList<Observer> observers;
     private Random rand = new Random();
-S
-    /**
-     * Creates a baby, sets its name, and adds a list of observers
+
+    /**ates a baby, sets its name, and adds a list of observers
      * 
+     * Cre
      * @param name The name of the baby
      */
     public Baby(String name) {
