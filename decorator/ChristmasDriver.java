@@ -1,5 +1,3 @@
-package decorator;
-
 public class ChristmasDriver {
 
 	public void runDriver() {
