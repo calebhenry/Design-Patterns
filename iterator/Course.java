@@ -45,7 +45,7 @@ public class Course {
      * Prints the course
      */
     public String toString() {
-        return name;
+        return name + ": " + title;
     }
 
     /**
